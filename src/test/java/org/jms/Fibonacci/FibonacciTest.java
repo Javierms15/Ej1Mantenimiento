@@ -1,4 +1,9 @@
 package org.jms.Fibonacci;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 /*
 Javier Martín Sendra Software 3ºA
 --------------------------------------------------------
@@ -13,7 +18,17 @@ Comprobamos los siguientes casos de prueba con diferentes asserts:
  */
 public class FibonacciTest {
 
+    private final Fibonacci fibo=new Fibonacci();
 
+    @Test
+    public void computeTest0(){
+        assertEquals(0,fibo.compute(0));
+    }
+
+    @Test
+    public void computeTest1(){
+        assertEquals(1,fibo.compute(1));
+    }
 
 
 }
