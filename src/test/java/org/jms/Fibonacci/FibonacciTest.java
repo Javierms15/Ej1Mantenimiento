@@ -3,6 +3,7 @@ package org.jms.Fibonacci;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /*
 Javier Martín Sendra Software 3ºA
@@ -62,6 +63,11 @@ public class FibonacciTest {
     @Test
     public void computeTest8(){
         assertEquals(21,fibo.compute(8));
+    }
+
+    @Test
+    public void computeTestNegative(){
+        assertThrows(RuntimeException.class,()->fibo.compute(-1));
     }
 
 }
