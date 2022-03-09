@@ -30,5 +30,38 @@ public class FibonacciTest {
         assertEquals(1,fibo.compute(1));
     }
 
+    @Test
+    public void computeTest2(){
+        assertEquals(1,fibo.compute(2));
+    }
+    @Test
+    public void computeTest3(){
+        assertEquals(2,fibo.compute(3));
+    }
+
+    @Test
+    public void computeTest4(){
+        assertEquals(3,fibo.compute(4));
+    }
+
+    @Test
+    public void computeTest5(){
+        assertEquals(5,fibo.compute(5));
+    }
+
+    @Test
+    public void computeTest6(){
+        assertEquals(8,fibo.compute(6));
+    }
+
+    @Test
+    public void computeTest7(){
+        assertEquals(13,fibo.compute(7));
+    }
+
+    @Test
+    public void computeTest8(){
+        assertEquals(21,fibo.compute(8));
+    }
 
 }
